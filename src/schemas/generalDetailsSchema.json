@@ -1,0 +1,66 @@
+{
+  "fields": [
+    {
+      "name": "searchPlant",
+      "label": "Search Plant",
+      "type": "input",
+      "rules": [{ "required": true, "message": "Please enter Search Plant." }]
+    },
+    {
+      "name": "searchInspector",
+      "label": "Search Inspector",
+      "type": "input",
+      "rules": [{ "required": true, "message": "Please enter Search Inspector." }]
+    },
+    {
+      "name": "slNo",
+      "label": "SL No.",
+      "type": "input",
+      "rules": [{ "required": true, "message": "Please enter SL No." }]
+    },
+    {
+      "name": "valveType",
+      "label": "Select Valve Type",
+      "type": "select",
+      "options": ["1", "2", "3", "4", "5"],
+      "rules": [{ "required": true, "message": "Please select Valve Type." }]
+    },
+    {
+      "name": "searchValveCode",
+      "label": "Search Valve Code",
+      "type": "input",
+      "rules": [{ "required": true, "message": "Please enter Search Valve Code." }]
+    },
+    {
+      "name": "application",
+      "label": "Enter Application",
+      "type": "input",
+      "rules": [{ "required": true, "message": "Please enter Application." }]
+    },
+    {
+      "name": "function",
+      "label": "Function",
+      "type": "input",
+      "rules": [{ "required": true, "message": "Please enter Function." }]
+    },
+    {
+      "name": "dateManufactured",
+      "label": "Date Manufactured",
+      "type": "date",
+      "rules": [{ "required": true, "message": "Please select Date Manufactured." }]
+    },
+    {
+      "name": "valveModel",
+      "label": "Valve Model",
+      "type": "input",
+      "rules": [{ "required": true, "message": "Please enter Valve Model." }]
+    }
+  ],
+  "layout": [
+    ["searchPlant", "searchInspector"],
+    ["slNo", "valveType"],
+    ["searchValveCode", "application"],
+    ["function", "dateManufactured"],
+    ["valveModel"]
+  ]
+}

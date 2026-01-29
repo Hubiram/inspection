@@ -1,0 +1,59 @@
+{
+  "fields": [
+    {
+      "name": "slNo",
+      "label": "SL. No.",
+      "type": "input",
+      "rules": [{ "required": true, "message": "Please enter SL. No." }]
+    },
+    {
+      "name": "tagNo",
+      "label": "Tag no.",
+      "type": "inputNumber",
+      "rules": [{ "required": true, "message": "Please enter Tag no." }]
+    },
+    {
+      "name": "valve",
+      "label": "Valve",
+      "type": "input",
+      "rules": [{ "required": true, "message": "Please enter Valve." }]
+    },
+    {
+      "name": "valveCode",
+      "label": "Valve Code",
+      "type": "inputNumber",
+      "rules": [{ "required": true, "message": "Please enter Valve Code." }]
+    },
+    {
+      "name": "valveType",
+      "label": "Valve Type",
+      "type": "select",
+      "options": ["Ball", "Gate", "Check", "Globe", "Butterfly"],
+      "rules": [{ "required": true, "message": "Please select Valve Type." }]
+    },
+    {
+      "name": "function",
+      "label": "Function",
+      "type": "textarea",
+      "rules": [{ "required": true, "message": "Please enter Function." }]
+    },
+    {
+      "name": "application",
+      "label": "Application",
+      "type": "textarea",
+      "rules": [{ "required": true, "message": "Please enter Application." }]
+    },
+    {
+      "name": "vModel",
+      "label": "V. Model",
+      "type": "input",
+      "rules": [{ "required": true, "message": "Please enter V. Model." }]
+    },
+    {
+      "name": "vManufactured",
+      "label": "V. Manufactured",
+      "type": "input",
+      "rules": [{ "required": true, "message": "Please enter V. Manufactured." }]
+    }
+  ]
+}
