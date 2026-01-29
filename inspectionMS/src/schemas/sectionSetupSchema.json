@@ -1,0 +1,25 @@
+{
+  "fields": [
+    {
+      "name": "sectionName",
+      "label": "Section Name",
+      "type": "input",
+      "rules": [{ "required": true, "message": "Please enter Section Name." }]
+    },
+    {
+      "name": "sectionIcon",
+      "label": "Section Icon",
+      "type": "upload",
+      "rules": [{ "required": true, "message": "Please upload Section Icon." }]
+    },
+    {
+      "name": "notes",
+      "label": "Notes",
+      "type": "textarea"
+    }
+  ],
+  "layout": [
+    ["sectionName", "sectionIcon"],
+    ["notes"]
+  ]
+}
