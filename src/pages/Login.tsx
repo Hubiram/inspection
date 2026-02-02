@@ -19,16 +19,16 @@ export default function Login() {
             setRole("admin");
             navigate("/admin");
           }}>
-            Admin Login
+            Author Login
           </Button>
 
           <Button
             onClick={() => {
               setRole("client");
-              navigate("/client");
+              navigate("/client/inspection");
             }}
           >
-            Client Login
+            Performer Login
           </Button>
         </div>
       </Card>

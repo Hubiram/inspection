@@ -116,9 +116,6 @@ export default function InspectionForm() {
           {/* ACTIONS */}
           <div className="flex justify-between pt-4">
             <div>
-              <label className="text-sm">
-                <span className="text-red-500">*</span> Add Attachment
-              </label>
               <input
                 type="file"
                 accept="image/*"

@@ -2,6 +2,8 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useRole } from "../context/RoleContext";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, LogOut } from "lucide-react";
+import { checklistConfig } from "../data/checklistConfig";
+
 
 export default function Sidebar() {
   const { role, setRole } = useRole();
@@ -15,17 +17,15 @@ export default function Sidebar() {
     { label: "Organization Details", to: "/admin/org" },
   ];
 
-  const clientLinks = [
-    "Safety & Accessibility",
-    "External Condition",
-    "Leakage Check",
-    "Operation & Function",
-    "Stem, Bonnet & Packing",
-    "Actuator / Operator",
-  ].map((section) => ({
-    label: section,
-    to: `/client/inspection/${encodeURIComponent(section)}`,
-  }));
+  const selectedValveType = "Gate Valve";
+
+  const clientLinks =
+    checklistConfig
+      .find((c) => c.valveType === selectedValveType)
+      ?.categories.map((cat) => ({
+        label: cat,
+        to: `/client/inspection/${encodeURIComponent(cat)}`,
+      })) || [];
 
   const links = role === "admin" ? adminLinks : clientLinks;
 
